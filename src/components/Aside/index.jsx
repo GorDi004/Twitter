@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const Aside = () => {
     return (
-        <aside>
+        <div className={style.aside}>
             <div className={style.aside_input}>
                 <span className={style.aside_search_icon}><SearchIcon/></span>
                 <input type="text" placeholder="Search Twitter" />
@@ -29,7 +29,7 @@ const Aside = () => {
                 </blockquote>
 
             </div>
-        </aside>
+        </div>
     )
 }
 

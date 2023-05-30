@@ -1,7 +1,7 @@
-main {
-    flex: 0.5;
+.main {
+    // flex: 0.5;
     border-right: 1px solid var(--twitter-background-color);
-    min-width: fit-content;
+    // min-width: fit-content;
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -18,7 +18,7 @@ main {
 
 }
 
-main::-webkit-scrollbar {
+.main::-webkit-scrollbar {
     display: none;
 
 }

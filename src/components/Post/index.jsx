@@ -10,16 +10,16 @@ const Post = (props) => {
     return (
         <div className={style.post}>
             <div className={style.post_profile_image}>
-                <img src={props.logo} alt="java-logo" />
-
+                <img src="https://www.pngitem.com/pimgs/m/174-1746846_java-logo-hd-png-download.png" alt="java-logo" />
             </div>
 
             <div className={style.post_body}>
                 <div className={style.post_header}>
                     <div className={style.post_header_text}>
-                        <h3>{props.title}
+                        <h3>Java-{props.title}
                             <span className={style.header_icon_section}>
-                                <span className={style.post_badge}><VerifiedIcon /></span>{props.tag}
+                                <VerifiedIcon className={style.post_badge} />
+                                @java
                             </span>
                         </h3>
                     </div>
@@ -27,18 +27,20 @@ const Post = (props) => {
                     <div className={style.post_header_description}>
                         <p>{props.text}</p>
                         <br />
-                        <p>{props.description}</p>
+                        <p className={style.description}>{props.description}</p>
                     </div>
 
                 </div>
-                <img src={props.image} alt="java18" />
+                <img src="https://images5.alphacoders.com/587/587597.jpg" alt="java18" />
 
                 <div className={style.post_footer}>
 
-                    <span><ChatIcon /></span>
-                    <span><RepeatIcon /></span>
-                    <span><FavoriteBorderIcon /></span>
-                    <span><FileUploadIcon /></span>
+                    <ChatIcon />
+                    <RepeatIcon />
+                    <span className={style.reactions}>
+                        <FavoriteBorderIcon />{props.reactions}
+                    </span>
+                    <FileUploadIcon />
 
                 </div>
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import style from './style.module.scss'
 import VerifiedIcon from '@mui/icons-material/Verified';
 import ChatIcon from '@mui/icons-material/Chat';
@@ -37,8 +37,17 @@ import Post from './../Post/index';
 
 
 const Main = () => {
+    const [posts, setPosts] = useState([])
+    useEffect(() => {
+        fetch('https://dummyjson.com/posts')
+            .then(res => res.json())
+            .then(json=>{
+                setPosts(json.posts)
+                console.log(json)
+            });
+    }, [])
     return (
-        <main>
+        <div className={style.main}>
             <div className={style.header}>
                 <h2>Home</h2>
             </div>
@@ -55,10 +64,10 @@ const Main = () => {
 
             </div>
 
-            {posts.map((post) => <Post logo={post.logo} title={post.title} tag={post.tag} text={post.text} description={post.description} image={post.image} />)}
+            {posts.map((post) => <Post key={post.id} title={post.userId} text={post.title} description={post.body} reactions={post.reactions}/>)}
 
 
-        </main>
+        </div>
     )
 }
 
