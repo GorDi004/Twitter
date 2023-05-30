@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "TwitterChirp";
+    src: url("./components/fonts/chirp-regular-web.woff") format("woff2"),
+        url("./components/fonts/chirp-bold-web.woff") format("woff"),
+        url("./components/fonts/chirp-heavy-web.woff") format("woff");
+}
+
+html {
+    font-family: TwitterChirp, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App {
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+:root {
+    --twitter-theme-color: #50b7f5;
+    --twitter-background-color: #e6ecf0;
+}
