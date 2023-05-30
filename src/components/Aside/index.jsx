@@ -1,34 +1,70 @@
 import React from 'react'
 import style from './style.module.scss'
 import SearchIcon from '@mui/icons-material/Search';
+import VerifiedIcon from '@mui/icons-material/Verified';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
+import ChatBubbleRoundedIcon from '@mui/icons-material/ChatBubbleRounded';
+import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
+
 
 const Aside = () => {
     return (
         <div className={style.aside}>
             <div className={style.aside_input}>
-                <span className={style.aside_search_icon}><SearchIcon/></span>
+                <span className={style.aside_search_icon}><SearchIcon /></span>
                 <input type="text" placeholder="Search Twitter" />
 
             </div>
 
             <div className={style.aside_container}>
                 <h2>What's happening?</h2>
-                <blockquote className={style.twitter_tweet}>
-                    <p lang="en" dir="ltr"> Save the date, because
-                        <a href="https://twitter.com/hashtag/JavaOne?src=hash&amp;ref_src=twsrc%5Etfw">#JavaOne</a>
-                        is back! Join the world’s premier
-                        <a href="https://twitter.com/hashtag/developer?src=hash&amp;ref_src=twsrc%5Etfw">#developer</a>
-                        conference in Las Vegas at
-                        <a href="https://twitter.com/Oracle?ref_src=twsrc%5Etfw">@Oracle</a>
-                        CloudWorld October 16–20, 2022.<br />
-                        <br />Subscribe for the latest news about registration, the call for papers, luminary speakers, and more.
-                        <a href="https://t.co/hhSf3dMGc1">https://t.co/hhSf3dMGc1</a>
-                        <a href="https://t.co/OeDFukcM8K">pic.twitter.com/OeDFukcM8K</a>
-                    </p>&mdash; Java (@java)
-                    <a href="https://twitter.com/java/status/1506310994112483328?ref_src=twsrc%5Etfw">March 22, 2022</a>
-                </blockquote>
-
+                <div className={style.aside_box}>
+                    <div className={style.aside_main_block}>
+                        <img className={style.aside_profile_image} src="https://www.pngitem.com/pimgs/m/174-1746846_java-logo-hd-png-download.png" alt="java-logo" />
+                        <div className={style.aside_block}>
+                            <div className={style.aside_block1}>
+                                <h3>Java  <VerifiedIcon className={style.aside_badge} /></h3>
+                                <img className={style.aside_badge_img} src="https://pbs.twimg.com/profile_images/1580919426081251330/z11bDhy-_bigger.jpg" />
+                                <div className={style.aside_logo}>
+                                    <svg viewBox="0 0 24 24" aria-hidden="true" className="r-1cvl2hr r-4qtqp9 r-yyyyoo r-16y2uox r-8kz0gk r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg>
+                                </div>
+                            </div>
+                            <div className={style.aside_block2}>
+                                <h2>@java</h2>
+                                <h2>·</h2>
+                                <h1>Folow</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, autem?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, autem?</p>
+                    <img className={style.aside_image} src="https://e0.pxfuel.com/wallpapers/337/97/desktop-wallpaper-anime-demon-slayer-tanjiro-live.jpg" />
+                    <div className={style.aside_data}>
+                        <p>6:45 PM · Mar 22, 2022</p>
+                        <InfoOutlinedIcon className={style.info} />
+                    </div>
+                    <hr className={style.line} />
+                    <div className={style.aside_response}>
+                        <span className={style.react_span}>
+                            <FavoriteOutlinedIcon className={style.heart} />
+                            104
+                        </span>
+                        <span className={style.react_span}>
+                            <ChatBubbleRoundedIcon className={style.chat} />
+                            Reply
+                        </span>
+                        <span className={style.react_span}>
+                            <FileUploadOutlinedIcon className={style.upload} />
+                            Share
+                        </span>
+                    </div>
+                    <div className={style.aside_button}>
+                        <h6>Read 1 reply</h6>
+                    </div>
+                </div>
             </div>
+
         </div>
     )
 }

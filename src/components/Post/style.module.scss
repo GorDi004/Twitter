@@ -1,14 +1,15 @@
-.post_profile_image img {
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    object-fit: contain;
-}
 .post {
     display: flex;
     align-items: flex-start;
     border-bottom: 1px solid var(--twitter-background-color);
     padding-bottom: 10px;
+}
+
+.post_profile_image img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
 }
 
 
@@ -24,7 +25,7 @@
     font-size: 14px !important;
     color: var(--twitter-theme-color);
     margin-right: 5px;
-    
+
 }
 
 .header_icon_section {
@@ -36,7 +37,7 @@
 .post_header_text h3 {
     font-size: 13px;
     // margin-bottom: 5px;
-    
+
 }
 
 .post_body {
@@ -53,6 +54,7 @@
 .post_profile_image {
     padding: 20px;
 }
+
 .post_footer {
     display: flex;
     justify-content: space-between;

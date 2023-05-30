@@ -6,7 +6,7 @@ import NavBar from './components/NavBar/index';
 const App = () => {
   return (
     <div className={style.App}>
-      <NavBar/>
+      <NavBar />
       <Main/>
       <Aside/>
     </div>
