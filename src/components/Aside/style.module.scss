@@ -47,10 +47,16 @@
     }
 }
 
-.aside_main_block {
+.aside_container_box {
     display: flex;
     align-items: center;
 }
+
+.aside_main_block{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .aside_profile_image {
     border-radius: 50%;
