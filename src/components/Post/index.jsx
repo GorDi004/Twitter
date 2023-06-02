@@ -34,7 +34,6 @@ const Post = (props) => {
                 <img src="https://images5.alphacoders.com/587/587597.jpg" alt="java18" />
 
                 <div className={style.post_footer}>
-
                     <ChatIcon />
                     <RepeatIcon />
                     <span className={style.reactions}>
